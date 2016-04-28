@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ListeEtudiant>
+    <formation id='0'>
+        <etudiant nom="Pierre" prenom='Louis' metier='Chimie' email="pierre.louis@gmail.com"></etudiant>
+
+    </formation>
+    <formation id='1'>
+        <etudiant nom="CAPEL" prenom='Adeline' metier='Mathematique' email="adeline.capel@gmail.com"></etudiant>
+        <etudiant nom="GROS" prenom='Allan' metier='Textile' email="allan.gros@gmail.com"></etudiant>
+         <etudiant nom="JULLIEN" prenom='Amandine' metier='Biologie' email="jullien.amandine@hotmail.fr"></etudiant>
+         <etudiant nom="DUMON" prenom='Alexia' metier='Agronomie' email="alexia47@hotmail.fr"></etudiant>
+         <etudiant nom="LEROY" prenom='Floriane' metier='Biologie' email="leroy.floriane.63@gmail.com"></etudiant>
+         <etudiant nom="RAYMOND" prenom='Mathias' metier='Biomedical' email="mathias.raymond@sfr.fr"></etudiant>
+         <etudiant nom="DUFOURCQ" prenom='Damien' metier='Mathematique' email="damien.concept@gmail.com"></etudiant>
+         <etudiant nom="JOURDAIN" prenom='Cedric' metier='Mathematique' email="cedric.jourdain56@gmail.com"></etudiant>
+         <etudiant nom="WALENTEK" prenom='Patrick' metier='Classifie (dossier 5/46)' email="Acces non autorise"></etudiant>
+         <etudiant nom="KADRI" prenom='Souad' metier='Chimiste' email="souad.kadri1@gmail.com"></etudiant>
+         <etudiant nom="DEMONTROND" prenom='Baptiste' metier='Chimiste' email="baptiste.demontrond@gmail.com"></etudiant>
+    </formation>
+</ListeEtudiant>

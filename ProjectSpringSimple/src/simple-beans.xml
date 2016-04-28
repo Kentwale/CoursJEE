@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="chefDeveloppeur" class="beans.Developpeur">
+		<property name="nom" value="Frank"/>
+		<property name="anneesExperience" value="10"/>
+	</bean>
+	<bean id="developpeur" class="beans.Developpeur">
+		<property name="nom" value="Olivier"></property>
+		<property name="anneesExperience">
+			<value>7</value>
+		</property>
+		</bean>
+		<bean id="societeDevLogiciel" class="beans.SocieteDevLogiciel">
+			<property name="chefDeveloppeur" ref="chefDeveloppeur"/>
+			<property name="developpeur" ref="developpeur"/>
+		</bean>
+</beans>
