@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import vdd.spring.beans.instruments.GroupeMusique;
 import vdd.spring.beans.instruments.Guitare;
 import vdd.spring.beans.instruments.Saxophone;
 import vdd.spring.beans.instruments.Violon;
@@ -22,20 +23,26 @@ public class MainSpring {
 		Saxophone saxophone=(Saxophone) appContext.getBean("saxophone");
 		Violon violon = (Violon)appContext.getBean("violon");
 		Guitare guitare = (Guitare)appContext.getBean("guitare");
-		Joueur musicien1 = (Joueur) appContext.getBean("Olivier");
-		Joueur musicien2 = (Joueur) appContext.getBean("Jean Marc");
-		Joueur musicien3 = (Joueur) appContext.getBean("Caroline");
-		Joueur musicien4 = (Joueur) appContext.getBean("Frank");
-
+		Joueur Olivier = (Joueur) appContext.getBean("Olivier");
+		Joueur JeanMarc = (Joueur) appContext.getBean("Jean-Marc");
+		Joueur Caroline = (Joueur) appContext.getBean("Caroline");
+		Joueur Frank = (Joueur) appContext.getBean("Frank");
+		GroupeMusique Julien = (GroupeMusique) appContext.getBean("Julien");
+		GroupeMusique Alain = (GroupeMusique) appContext.getBean("Alain");
+		Joueur Louis=(Joueur) appContext.getBean("Louis");
+		
 		// 3. Manipulation du bean
 		saxophone.jouer();
 		violon.jouer();
 		guitare.jouer();
-		musicien1.jouerMorceau();
-		musicien2.jouerMorceau();
-		musicien3.jouerMorceau();
-		musicien4.jouerMorceau();
-
+		Olivier.jouerMorceau();
+		JeanMarc.jouerMorceau();
+		Caroline.jouerMorceau();
+		Frank.jouerMorceau();
+		Julien.jouerMorceau();
+		Alain.jouerMorceau();
+		Louis.jouerMorceau();
+		
 		appContext.close();
 	}
 }

@@ -6,11 +6,11 @@ import vdd.spring.exception.JouerException;
 public class Musicien implements Joueur {
 
 	private String morceau;
-	
+	private String nom;
 	private Instrument instrument;
 
 	public void jouerMorceau() throws JouerException {
-		System.out.print(" joue " + morceau + " : ");
+		System.out.print(nom+ " joue " + morceau + " ");
 		instrument.jouer();
 	}
 
@@ -36,6 +36,14 @@ public class Musicien implements Joueur {
 
 	public Instrument getInstrument() {
 		return instrument;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
 
 	
